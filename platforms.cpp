@@ -42,3 +42,6 @@ main(){
     sort(dept, dept + 6);
     cout << minimumPlatforms(arrival, dept, 6, 6);
 }
+
+
+// Output - 3
