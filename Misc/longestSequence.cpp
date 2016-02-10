@@ -20,3 +20,6 @@ main()
     }
     cout << *max_element(seq.begin(), seq.end());
 }
+
+
+// Output - 4
