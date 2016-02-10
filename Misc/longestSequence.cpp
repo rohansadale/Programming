@@ -1,4 +1,4 @@
-// Longest non-decreasing sequence in array
+// Longest non-decreasing subsequence in array
 
 
 #include<iostream>
