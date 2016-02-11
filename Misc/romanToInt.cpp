@@ -1,5 +1,5 @@
 /*
-Convert a roman number to integer
+Convert a roman number to decimal
 */
 
 #include<iostream>
