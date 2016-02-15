@@ -8,15 +8,6 @@ Design an algorithm to find the kth number such that the only prime factors are 
 #include<string>
 using namespace std;
 
-int min(int n1, int n2, int n3){
-    if(n1 <= n2 && n1 <= n3)
-        return n1;
-    else if(n2 <= n1 && n2 <= n3)
-        return n2;
-    else
-        return n3;
-}
-
 unsigned getNumber(int n){
     unsigned *a = new unsigned[n];
     int i2 = 0, i3 = 0, i5 = 0;
@@ -29,7 +20,7 @@ unsigned getNumber(int n){
     int num = 1;
     
     for(int i = 1; i < n ; i++){
-        num = min(next_2, next_3, next_5);
+        num = min(min(next_2, next_3), next_5);
         if(num != a[i-1])
             a[i] = num;
         //cout << num << endl;
