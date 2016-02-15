@@ -6,20 +6,21 @@
 using namespace std;
 
 int continuousSum(vector<int> &v){
-    int max = -30000;
-    int sum = 0;
-    for(int i = 0; i < v.size(); i++){
-        sum += v[i];
-        max = max > sum ? max : sum;
+    int sum = v[0];
+    int maxSum = v[0];
+    
+    for(int i = 1; i < v.size(); i++){
+        sum = max(v[i], sum+v[i]);
+        maxSum = max(maxSum, sum);
     }
-    return max;
+    return maxSum;
 }
 
 main()
 {
-    vector<int> v = {-1,-3,-4,-6,-3,-12,-4,-6,-2};
+    vector<int> v = {-2, -3, 4, -1, -2, -3, 8, -3};
     cout<<continuousSum(v);
 
 }
 
-// Output = -1
+// Output = 8
