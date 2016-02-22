@@ -15,7 +15,7 @@ int reachSteps(int n){
     v[2] = 2;
     v[3] = 4;
     for(int i = 4; i <= n; i++){
-        v[i] = v[n-3] + v[n-2] + v[n-1];
+        v[i] = v[i-3] + v[i-2] + v[i-1];
         //cout << v[i];
     }
     return v[n];
