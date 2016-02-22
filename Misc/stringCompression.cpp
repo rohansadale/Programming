@@ -7,16 +7,13 @@ string, your method should return the original string.
 
 */
 
-// PROGRAM 1
 #include<iostream>
 #include<vector>
 #include<algorithm>
 #include<string>
 using namespace std;
 
-main()
-{
-    string s = "aaabbcccd";
+void compress(string s){
     string out = "";
     int count = 1;
     for(int i = 0; i < s.size(); i++){
@@ -28,8 +25,21 @@ main()
             count = 1;
         }
     }
-    cout << out;
+    if(out.size() < s.size())
+        cout << out << endl;
+    else
+        cout << s << endl;;
+}
+
+main()
+{
+    compress("aabcccccaaa");
+    compress("aabbcc");
 }
 
 
-//Output - a3b2c3d1
+/*
+Output
+a2b1c5a3
+aabbcc
+*/
