@@ -1,4 +1,5 @@
 // Rabin-Karp implementation
+// Concept - https://www.youtube.com/watch?v=H4VrKHVG5qI
 
 #include <iostream>
 #include <cmath>
