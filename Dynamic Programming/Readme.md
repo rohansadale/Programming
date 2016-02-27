@@ -1,1 +1,1 @@
-Problems with both dynamic programming and recursion
+Programs with dynamic programming and recursion
