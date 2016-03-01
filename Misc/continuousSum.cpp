@@ -1,8 +1,8 @@
 // Given an array of integers (positive and negative) find the largest continuous sum.
 
-#include<iostream>
+#include <iostream>
 #include <vector>
-#include<algorithm>
+#include <algorithm>
 using namespace std;
 
 int continuousSum(vector<int> &v){

@@ -1,7 +1,7 @@
 // Write a method to return all subsets of a set.
 
 #include <math.h>
-#include<iostream>
+#include <iostream>
 #include <vector>
 using namespace std;
 

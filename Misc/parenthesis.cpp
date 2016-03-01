@@ -1,6 +1,6 @@
 //Implement an algorithm to print all valid (i.e., properly opened and closed) combinations of n-pairs of parentheses.
 
-#include<iostream>
+#include <iostream>
 #include <string>
 using namespace std;
 
@@ -18,7 +18,6 @@ main()
     int n = 3;
     string s;
     possibleCombinations(n,n,s);
-
 }
 
 

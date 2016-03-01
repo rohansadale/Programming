@@ -1,8 +1,8 @@
 //Write a method to sort an array of strings so that all the anagrams are next to each other.
 
-#include<iostream>
+#include <iostream>
 #include <vector>
-#include<algorithm>
+#include <algorithm>
 using namespace std;
 
 #define all(c) c.begin(), c.end()

@@ -1,9 +1,9 @@
 //Given an integer array, output all pairs that sum up to a specific value k
 
-#include<iostream>
+#include <iostream>
 #include <vector>
-#include<map>
-#include<algorithm>
+#include <map>
+#include <algorithm>
 using namespace std;
 
 void pairs(vector<int> &v, int k){

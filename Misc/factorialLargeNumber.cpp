@@ -1,8 +1,8 @@
 // Factorial of a Large Number
 
-#include<iostream>
-#include<vector>
-#include<algorithm>
+#include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
 string multiply(string s1, string s2){

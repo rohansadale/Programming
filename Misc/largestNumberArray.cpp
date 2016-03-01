@@ -5,9 +5,9 @@ And if the given numbers are {1, 34, 3, 98, 9, 76, 45, 4}, then the arrangement 
 */
 
 
-#include<iostream>
-#include<vector>
-#include<algorithm>
+#include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
 bool myCompare(int X, int Y){
