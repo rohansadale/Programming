@@ -12,16 +12,19 @@ class Queue{
     private:
         node *front;
         node *rear;
+	int n;
     public:
         Queue();
         void enqueue(int);
         void dequeue();
         void display();
+	int size();
 };
 
 Queue::Queue(){    
     front = NULL;
-    rear = NULL;    
+    rear = NULL;  
+    n = 0;  
 }
 
 void Queue::enqueue(int data){
@@ -36,12 +39,14 @@ void Queue::enqueue(int data){
         rear->next = temp;
     }
     rear = temp;
+    n++;
 }
 
 void Queue::dequeue(){
     node *temp = front;
     front = front->next;
     delete(temp);
+    n--;
 }
 
 void Queue::display(){
@@ -51,6 +56,10 @@ void Queue::display(){
         t = t->next;
     }
     cout << endl;
+}
+
+int Queue::size(){
+	return n;
 }
 
 int main()
@@ -68,7 +77,9 @@ int main()
         q.dequeue();
     }
     q.display();
-    
+
+    cout << "Size = " << q.size() << endl;    
+
     return 0;
 }
 
