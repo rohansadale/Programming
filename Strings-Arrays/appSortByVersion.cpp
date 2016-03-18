@@ -2,9 +2,9 @@
 
 #include <iostream>
 #include <string>
-#include<vector>
+#include <vector>
 #include <sstream>
-#include<algorithm>
+#include <algorithm>
 
 using namespace std;
 
